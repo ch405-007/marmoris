@@ -18,7 +18,7 @@
     }
 
     .bgimg {
-        background-image: url('/w3images/onepage_restaurant.jpg');
+        background-image: url('background.jpg');
         min-height: 100%;
         background-position: center;
         background-size: cover;
@@ -29,17 +29,17 @@
 
     <div class="bgimg w3-display-container w3-text-white">
         <div class="w3-display-middle w3-jumbo">
-            <p>logo</p>
+            <img src="logo.png" alt="logo">
         </div>
         <div class="w3-display-topleft w3-container w3-xlarge">
             <p><button onclick="document.getElementById('menu').style.display='block'"
-                    class="w3-button w3-black">menu</button></p>
+                    class="w3-ripple w3-aqua">menu</button></p>
             <p><button onclick="document.getElementById('contact').style.display='block'"
-                    class="w3-button w3-black">contact</button></p>
+                    class="w3-ripple w3-aqua">Contact</button></p>
         </div>
         <div class="w3-display-bottomleft w3-container">
             <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
-            <p class="w3-large">42 village St, New York</p>
+            <p class="w3-large">Nūnu’e, Bora Bora, French Polynesia</p>
             <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </div>
     </div>
@@ -100,6 +100,30 @@
                             placeholder="Message \ Special requirements" required name="Message"></p>
                     <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
                 </form>
+                <hr>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="904" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=N%C5%ABnu%E2%80%99e,%20Bora%20Bora,%20French%20Polynesia&t=k&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://2piratebay.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: auto;
+                                width: 100%;
+                            }
+                        </style>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: auto;
+                                width: 100%;
+                            }
+                        </style>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
